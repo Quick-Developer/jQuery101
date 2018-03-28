@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	
+    <title>jQuery101</title>
+</head>
+<body>
+
+	<script  type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	
+	<h1>Hello, change me blue please!</h1>
+	<div class="red-div">Please turn me red!</div>
+
+	<ul>
+	 <li>Turn this li to green!</li>
+	  <li>Turn this li to yellow!</li>
+	 <li>Turn this li to pink!</li>
+	</ul>
+  
+	<div id="brown-div">Turn me brown!</div>
+	<input type="text" id="my-input" placeholder="Some Text!"></input>
+	<button id="btn-some-text">Click Me!</button>
+	<ul class="students">
+		<li>Sacha</li>
+	</ul>
+	<input type="text" id="my-input-student" placeholder="student name"></input>
+	<button id="btn-some-student">Click Me!</button>
+	<script src="main.js"></script>
+
+<!--<form>
+    <div style="display:inline; width:15%; float:left;">Username:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="text" placeholder="User name"> 
+	</div>
+	<div style="display:inline; width:15%; float:left;">User name:</div>
+	<div style="display:inline; width:85%; float:left;">
+		<input type="text" id='username' placeholder="Should be 5 characters or more"> 
+	</div>	  
+	<div style="display:inline; width:15%; float:left;">Email:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="email" placeholder="yourname@email.com">
+		</div>
+    <div style="display:inline; width:15%; float:left;">Password:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="password" id='password' placeholder="Should be 6 characters or more">
+		</div>
+	<div style="display:inline; width:15%; float:left;">Repeat Password:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="password" id='repeatPassword' placeholder="Repeat Password">
+	</div>
+	<div style="display:inline; width:15%; float:left;">Phone Number:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="number" id='phoneNumber' placeholder="You can enter up to 15 digits">
+	</div>    
+	<div style="display:inline; width:15%; float:left;">Country:</div>
+    <div style="display:inline; width:85%; float:left;">
+		<input type="text" id='country' placeholder="Enter Israel or USA"> 
+	</div>
+<br>	
+    <button type="button" onclick="submitForm()">Submit</button>
+	<div id="msgUsername"></div>
+	<div id="msgPassword"></div>
+	<div id="msgRePassword"></div>
+	<div id="msgCountry"></div>
+	<div id="msgPhoneNumber"></div>
+	<div id="msgPersonal"></div> 
+</form>
+<script type="text/javascript">
+function submitForm() {
+var flag = true;
+    var input = document.getElementById('username');    
+    var getInput = input.value;
+    if (getInput.length < 5) {
+	flag = false;
+        document.getElementById('msgUsername').innerHTML = "The supplied user name is too short, try again using 5 or more characters";
+		document.getElementById('msgUsername').style.backgroundColor = "red";
+    } else {
+	document.getElementById('msgUsername').innerHTML = ""
+	setTimeout(function () {
+    alert("Thank you " + getInput);
+  }, 300);
+    }
+	input = document.getElementById('password');    
+    getInput = input.value;
+    if (getInput.length < 6) {
+	flag = false;
+        document.getElementById('msgPassword').innerHTML = "The supplied password is too short, try again using 6 or more characters";
+		document.getElementById('msgPassword').style.backgroundColor = "red";
+    } else {
+	document.getElementById('msgPassword').innerHTML = "";	
+	input = document.getElementById('repeatPassword');
+	var match = input.value;
+	if (match !== getInput) {
+	document.getElementById('msgRePassword').innerHTML = "The password is not the same, try again insert the password";
+	document.getElementById('msgRePassword').style.backgroundColor = "red";
+	} else {
+	document.getElementById('msgRePassword').innerHTML = "";
+	}
+	}
+	input = document.getElementById('country');    
+    getInput = input.value;
+    if (!(getInput.localeCompare("Israel")) && !(getInput.localeCompare("USA"))) {
+	flag = false;
+        document.getElementById('msgCountry').innerHTML = "The country is not allow, only israel or USA is possible";
+		document.getElementById('msgCountry').style.backgroundColor = "red";
+    } else {
+	document.getElementById('msgCountry').innerHTML = "";
+	}
+	input = document.getElementById('phoneNumber');    
+    getInput = input.value;
+    if (getInput.length > 15) {
+	flag = false;
+        document.getElementById('msgPhoneNumber').innerHTML = "The supplied phone number is too long, try again using 15 or less";
+		document.getElementById('msgPhoneNumber').style.backgroundColor = "red";
+    } else {
+	document.getElementById('msgPhoneNumber').innerHTML = "";
+    }
+	if (flag) {
+        document.getElementById('msgPersonal').innerHTML = "Registration successful";
+		document.getElementById('msgPersonal').style.backgroundColor = "green";
+    }
+	
+	
+}
+</script>-->
+</body>
+</html>
